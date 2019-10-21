@@ -2,6 +2,7 @@ class Account
 
   def initialize
   @credit = []
+  @debit = []
   end
 
   def statement
@@ -13,6 +14,10 @@ class Account
 
   def deposit(deposit_value)
       @credit << deposit_value
+  end
+
+  def debit(debit_value)
+    @debit << debit_value
   end
 
 end
