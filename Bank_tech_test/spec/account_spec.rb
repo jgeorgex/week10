@@ -15,6 +15,14 @@ describe 'statement' do
       @credit = []
       expect(account.deposit(1000.00)).to eq(@credit = [1000.00])
     end
-  end
 
+    it 'credits account with 1000.00 and 2000' do
+      account = Account.new
+      @credit = []
+      account.deposit(1000.00)
+      expect(account.deposit(2000.00)).to eq(@credit = [1000.00, 2000.00])
+    end
+
+
+  end
 end
