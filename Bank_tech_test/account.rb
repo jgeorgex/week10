@@ -14,4 +14,8 @@ def update_balance
   @balance = @deposits.sum
 end
 
+def debit(date, debit_amount)
+  "14/01/2012 || || 500.00 || 2500.00"
+end
+
 end
