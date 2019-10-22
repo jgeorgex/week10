@@ -1,7 +1,7 @@
 class Account
 
-def credit(credit_amount, date)
-  "10/01/2012 || 1000.00 || || 1000.00"
+def credit(date, credit_amount)
+  "#{date}|| #{credit_amount}0 || || 1000.00"
 end
 
 end
