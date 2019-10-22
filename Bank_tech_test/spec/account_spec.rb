@@ -25,9 +25,6 @@ end
 describe '#print_statement' do
   it 'prints out a statement with no transactions' do
     account = Account.new
-    account.credit("10/01/2012 ", 1000.00)
-    account.credit("13/01/2012 ", 2000.00)
-    account.debit("14/01/2012 ", 500.00)
-    expect(account.print_statement).to eq(["10/01/2012 || 1000.00 || || 1000.00", "13/01/2012 || 2000.00 || || 3000.00", "14/01/2012 || || 500.00 || 2500.00"])
+    expect(account.print_statement).to eq("date || credit || debit || balance")
   end
 end
