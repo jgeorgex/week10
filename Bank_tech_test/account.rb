@@ -20,4 +20,8 @@ def debit(date, debit_amount)
   "#{date}|| || #{debit_amount}0 || #{update_balance}0"
 end
 
+def print_statement
+  "date || credit || debit || balance"
+end
+
 end
