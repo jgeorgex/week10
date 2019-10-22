@@ -6,7 +6,8 @@ class Account
   end
 
   def statement
-    "date || credit || debit || balance"
+  puts "date || credit || debit || balance"
+  puts "14/01/2012 || || 500.00 || 2500.00"
   end
 
   def deposit(deposit_value)
