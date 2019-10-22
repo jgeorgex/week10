@@ -3,6 +3,7 @@ class Account
 def initialize
 @balance = 0
 @deposits = []
+@withdrawals = []
 end
 
 def credit(date, credit_amount)
@@ -11,11 +12,12 @@ def credit(date, credit_amount)
 end
 
 def update_balance
-  @balance = @deposits.sum
+  @balance = @deposits.sum - @withdrawals.sum
 end
 
 def debit(date, debit_amount)
-  "#{date}|| || #{debit_amount}0 || 2500.00"
+  @withdrawals << debit_amount
+  "#{date}|| || #{debit_amount}0 || #{update_balance}0"
 end
 
 end
