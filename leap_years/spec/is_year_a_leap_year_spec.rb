@@ -21,5 +21,20 @@ describe '#is_year_a_leap_year' do
     expect(is_year_a_leap_year(1700)).to eq("1700 is NOT a leap year")
   end
 
+  it '1800 is not a leap year' do
+    expect(is_year_a_leap_year(1800)).to eq("1800 is NOT a leap year")
+  end
+
+  it '1900 is not a leap year' do
+    expect(is_year_a_leap_year(1900)).to eq("1900 is NOT a leap year")
+  end
+
+  it '2100 is not a leap year' do
+    expect(is_year_a_leap_year(2100)).to eq("2100 is NOT a leap year")
+  end
+
+  it '2008 is a leap year' do
+    expect(is_year_a_leap_year(2008)).to eq("2008 IS a leap year")
+  end
 
 end
