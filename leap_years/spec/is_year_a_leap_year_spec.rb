@@ -37,4 +37,8 @@ describe '#is_year_a_leap_year' do
     expect(is_year_a_leap_year(2008)).to eq("2008 IS a leap year")
   end
 
+  it '2012 is a leap year' do
+    expect(is_year_a_leap_year(2012)).to eq("2012 IS a leap year")
+  end
+
 end
