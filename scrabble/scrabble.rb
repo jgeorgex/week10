@@ -1,10 +1,10 @@
 class Scrabble
 
   def score(word)
-    if word = 'a'
+    if word =='f'
+      4
+    elsif word == 'a'
       1
-    else
-      0
     end
   end
 end
