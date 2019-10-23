@@ -99,9 +99,9 @@ $ account.print_statement
 
 This will print out your transaction history with your most recent transaction at the top.  In this case, it will look like this:
 
-date || credit || debit || balance
-23/10/2019 || || 25.00 || 75.00
-23/10/2019 || 100.00 || || 100.00
+date || credit || debit || balance<br>
+23/10/2019 || || 25.00 || 75.00<br>
+23/10/2019 || 100.00 || || 100.00<br>
 
 ## Reflection
 
@@ -118,6 +118,8 @@ Both of these could be implemented to improve code quality and ensure I stayed o
 
 Formatting<br>
 As Ruby returns the last thing in the method I could enter a message as a string at the bottom of method to avoid users being presented with unhelpful arrays of data underneath things like their printed statement.
+
+I would also tidy up how the statement spacing is done so it's easier to read.
 
 credit amount<br>
 Whilst the program works with the acceptance criteria required edge cases such as a user entering anything other than exactly the right format will cause problems.  For example, 25.25 as an amount will lead to 25.250 being returned due to how credit_amount has been generated on lines 14 and 27.  This can be resolved most likely by correctly setting / rounding floats.  
