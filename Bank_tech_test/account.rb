@@ -1,7 +1,5 @@
 class Account
 
-  attr_accessor :date
-
   def initialize
     @balance = 0
     @deposits = []
