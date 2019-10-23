@@ -4,7 +4,7 @@ class Account
     @balance = 0
     @deposits = []
     @withdrawals = []
-    @statement = []
+    @statement = ["date || credit || debit || balance"]
   end
 
   def credit(date, credit_amount)
@@ -26,7 +26,8 @@ class Account
   end
 
   def print_statement
-    "date || credit || debit || balance"
+      @statement.each do |transaction|
+      puts transaction
+    end
   end
-
 end

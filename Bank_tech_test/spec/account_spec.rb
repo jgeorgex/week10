@@ -27,4 +27,10 @@ describe '#print_statement' do
     account = Account.new
     expect(account.print_statement).to eq("date || credit || debit || balance")
   end
+
+  it 'prints out a statement after one transaction' do
+    account = Account.new
+    account.credit("10/01/2012 ", 1000.00)
+    expect(account.print_statement).to eq("date || credit || debit || balance, 10/01/2012 || 1000.00 || || 1000.00")
+  end
 end

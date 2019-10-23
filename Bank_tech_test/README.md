@@ -13,32 +13,32 @@ Data can be kept in memory (it doesn't need to be stored to a database or anythi
 
 ## Acceptance criteria
 
-Given a client makes a deposit of 1000 on 10-01-2012
-And a deposit of 2000 on 13-01-2012
-And a withdrawal of 500 on 14-01-2012
-When she prints her bank statement
+Given a client makes a deposit of 1000 on 10-01-2012. <br>
+And a deposit of 2000 on 13-01-2012. <br>
+And a withdrawal of 500 on 14-01-2012. <br>
+When she prints her bank statement. <br>
 Then she would see
 
-date || credit || debit || balance
-14/01/2012 || || 500.00 || 2500.00
-13/01/2012 || 2000.00 || || 3000.00
-10/01/2012 || 1000.00 || || 1000.00
+date || credit || debit || balance <br>
+14/01/2012 || || 500.00 || 2500.00 <br>
+13/01/2012 || 2000.00 || || 3000.00 <br>
+10/01/2012 || 1000.00 || || 1000.00 <br>
 
 ## User Stories
 
 These are user stories I will use meet the specification.
 
-As a client
-So I can credit my account
-I make a deposit to my account
+As a client <br>
+So I can credit my account <br>
+I make a deposit to my account <br>
 
-As a client
-So I can debit my account
-I make a withdraw from  my account
+As a client <br>
+So I can debit my account <br>
+I make a withdraw from  my account <br>
 
-As a client  
-So I can see a history of credits, debits and balance by date
-I can print my bank statement
+As a client <br>
+So I can see a history of credits, debits and balance by date <br>
+I can print my bank statement <br>
 
 ##  Tests
 
@@ -51,7 +51,8 @@ Make a deposit of 2000 on 13/01/2012 balance = 3000
 Make a withdrawal of 500 on 14/01/2012 balance = 2500
 
 Print bank statement and see.
-date || credit || debit || balance
-14/01/2012 || || 500.00 || 2500.00
-13/01/2012 || 2000.00 || || 3000.00
-10/01/2012 || 1000.00 || || 1000.00
+
+date || credit || debit || balance <br>
+14/01/2012 || || 500.00 || 2500.00 <br>
+13/01/2012 || 2000.00 || || 3000.00 <br>
+10/01/2012 || 1000.00 || || 1000.00 <br>
