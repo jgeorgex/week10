@@ -121,3 +121,6 @@ As Ruby returns the last thing in the method I could enter a message as a string
 
 credit amount<br>
 Whilst the program works with the acceptance criteria required edge cases such as a user entering anything other than exactly the right format will cause problems.  For example, 25.25 as an amount will lead to 25.250 being returned due to how credit_amount has been generated on lines 14 and 27.  This can be resolved most likely by correctly setting / rounding floats.  
+
+Tests<br>
+I would also correct print_statement tests for the new formatting which was required to print out the statement in the correct order.

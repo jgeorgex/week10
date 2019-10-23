@@ -31,9 +31,9 @@ class Account
 
   def print_statement
     puts "date || credit || debit || balance"
-    @statement.reverse.each do |transaction|
+      @statement.reverse.each do |transaction|
       puts transaction
-    end
+      end
   end
-
+  
 end
