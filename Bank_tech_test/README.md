@@ -1,6 +1,4 @@
-## Bank tech test
-
-## Specification
+# Bank Tech Test
 
 ## Requirements
 
