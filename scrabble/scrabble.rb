@@ -13,6 +13,8 @@ class Scrabble
       5
     elsif word == 'J'
       8
+    elsif word == 'Q'
+      10
     end
   end
 end

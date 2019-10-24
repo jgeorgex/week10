@@ -22,4 +22,9 @@ describe '#score' do
     expect(scrabble.score('J')).to eq(8)
   end
 
+  it 'score is 10 if word is "Q" ' do
+    scrabble = Scrabble.new
+    expect(scrabble.score('Q')).to eq(10)
+  end
+
 end
