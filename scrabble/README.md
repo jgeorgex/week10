@@ -32,17 +32,6 @@ scrabble = Scrabble.new('')
 
 TESTS:
 
-A, =>	1
-D, =>	2
-B, =>	3
-F, =>	4
-K =>	5
-J, =>	8
-Q, =>	10
-
-scrabble.score # => 0
-
-scrabble = Scrabble.new(" \t\n")
 scrabble.score # => 0
 
 scrabble = Scrabble.new(nil)
@@ -62,3 +51,9 @@ scrabble.score # => 22
 
 scrabble = Scrabble.new('OXYPHENBUTAZONE')
 scrabble.score # => 41
+
+
+
+
+scrabble = Scrabble.new(" \t\n")
+scrabble.score # => 0
