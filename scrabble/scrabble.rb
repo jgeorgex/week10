@@ -11,6 +11,8 @@ class Scrabble
       4
     elsif word == 'K'
       5
+    elsif word == 'J'
+      8
     end
   end
 end

@@ -12,9 +12,14 @@ describe '#score' do
     expect(scrabble.score('F')).to eq(4)
   end
 
-
   it 'score is 5 if word is "K" ' do
     scrabble = Scrabble.new
     expect(scrabble.score('K')).to eq(5)
   end
+
+  it 'score is 8 if word is "J" ' do
+    scrabble = Scrabble.new
+    expect(scrabble.score('J')).to eq(8)
+  end
+
 end
