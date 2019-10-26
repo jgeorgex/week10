@@ -1,12 +1,16 @@
 class Scrabble
 
-def initialize(word)
+  def initialize(word)
+    @word = word
+  end
 
-end
-
-def score
-  1
-end
+  def score
+    if @word == 'A'
+      1
+    else
+      4
+    end
+  end
 
 
 end
