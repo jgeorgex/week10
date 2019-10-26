@@ -7,10 +7,11 @@ class Scrabble
   def score
     if @word == 'A'
       1
-    else
+    elsif
+      @word == 'F'
       4
+    else
+      0
     end
   end
-
-
 end

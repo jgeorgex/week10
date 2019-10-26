@@ -2,6 +2,11 @@ require './scrabble'
 
 describe '#score' do
 
+  it 'returns a score of 0 when the word is " "' do
+    scrabble = Scrabble.new('')
+    expect(scrabble.score).to eq(0)
+  end
+
   it 'returns a score of 1 when the word is "A"' do
     scrabble = Scrabble.new('A')
     expect(scrabble.score).to eq(1)
@@ -11,4 +16,5 @@ describe '#score' do
     scrabble = Scrabble.new('F')
     expect(scrabble.score).to eq(4)
   end
+
 end
