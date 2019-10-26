@@ -5,13 +5,17 @@ class Scrabble
   end
 
   def score
-    if @word == 'A'
-      1
+    word_score = []
+    @word.each_char { |letter|
+    if letter == 'A'
+      word_score << 1
     elsif
-      @word == 'F'
-      4
+      letter == 'F'
+      word_score << 4
     else
-      0
+      word_score << 0
     end
+    }
+    word_score.sum
   end
 end

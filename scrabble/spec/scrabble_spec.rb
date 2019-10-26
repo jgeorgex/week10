@@ -17,4 +17,8 @@ describe '#score' do
     expect(scrabble.score).to eq(4)
   end
 
+  it 'returns a score of 5 when the word is "AF"' do
+    scrabble = Scrabble.new('AF')
+    expect(scrabble.score).to eq(5)
+  end
 end
