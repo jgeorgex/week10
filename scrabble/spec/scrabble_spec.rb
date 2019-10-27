@@ -42,4 +42,9 @@ describe '#score' do
     expect(scrabble.score).to eq(6)
   end
 
+  it 'returns a score of 6 when the word is "quirky"' do
+    scrabble = Scrabble.new('quirky')
+    expect(scrabble.score).to eq(22)
+  end
+
 end
