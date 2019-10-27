@@ -37,4 +37,9 @@ describe '#score' do
     expect(scrabble.score).to eq(35)
   end
 
+  it 'returns a score of 6 when the word is "street"' do
+    scrabble = Scrabble.new('street')
+    expect(scrabble.score).to eq(6)
+  end
+
 end
