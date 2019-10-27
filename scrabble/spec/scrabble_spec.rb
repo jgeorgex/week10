@@ -47,4 +47,9 @@ describe '#score' do
     expect(scrabble.score).to eq(22)
   end
 
+  it 'returns a score of 6 when the word is "OXYPHENBUTAZONE"' do
+    scrabble = Scrabble.new('OXYPHENBUTAZONE')
+    expect(scrabble.score).to eq(41)
+  end
+
 end
