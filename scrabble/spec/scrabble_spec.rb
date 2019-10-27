@@ -32,4 +32,9 @@ describe '#score' do
     expect(scrabble.score).to eq(34)
   end
 
+  it 'returns a score of 35 when the word is "aaedbfkjq"' do
+    scrabble = Scrabble.new('aaedbfkjq')
+    expect(scrabble.score).to eq(35)
+  end
+
 end
