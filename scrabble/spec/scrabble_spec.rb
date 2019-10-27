@@ -42,14 +42,19 @@ describe '#score' do
     expect(scrabble.score).to eq(6)
   end
 
-  it 'returns a score of 6 when the word is "quirky"' do
+  it 'returns a score of 22 when the word is "quirky"' do
     scrabble = Scrabble.new('quirky')
     expect(scrabble.score).to eq(22)
   end
 
-  it 'returns a score of 6 when the word is "OXYPHENBUTAZONE"' do
+  it 'returns a score of 41 when the word is "OXYPHENBUTAZONE"' do
     scrabble = Scrabble.new('OXYPHENBUTAZONE')
     expect(scrabble.score).to eq(41)
+  end
+
+  it 'returns a score of 0 when the word is " \t\n"' do
+    scrabble = Scrabble.new(' \t\n')
+    expect(scrabble.score).to eq(0)
   end
 
 end

@@ -27,11 +27,13 @@ class Scrabble
     elsif
       letter == "q" || letter == "z"
       word_score << 10
+    elsif
+      @word.include?(" ")
+      return 0
     else
       word_score << 0
     end
     }
     word_score.sum
   end
-
 end
