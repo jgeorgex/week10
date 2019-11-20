@@ -5,12 +5,12 @@ class Account
     @deposits = []
     @withdrawals = []
     @statement = []
+    @date = Time.new.strftime("%d/%m/%Y")
   end
 
   def credit(credit_amount)
     @deposits << credit_amount
-    date = Time.new
-    date = date.strftime("%d/%m/%Y")
+    date = @date
     credit_transaction = "#{date} || #{credit_amount}0 || || #{update_balance}0"
     @statement << credit_transaction
     return credit_transaction
@@ -22,8 +22,7 @@ class Account
 
   def debit(debit_amount)
     @withdrawals << debit_amount
-    date = Time.new
-    date = date.strftime("%d/%m/%Y")
+    date = @date
     debit_transaction = "#{date} || || #{debit_amount}0 || #{update_balance}0"
     @statement << debit_transaction
     return debit_transaction
@@ -35,5 +34,5 @@ class Account
       puts transaction
       end
   end
-  
+
 end
